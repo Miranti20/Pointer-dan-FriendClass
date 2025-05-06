@@ -14,10 +14,10 @@ public:
         cin >> panjang;
         cout << "Masukkan lebar : ";
         cin >> lebar;
-    {
+    }
     
     int luasPp(int a,int b)
-    
+    {
         return a * b;
     }
 
@@ -40,12 +40,23 @@ public:
         {
             return 3.14 * r * r;
         }
-    }
-
-};
+    };
+    
 
     int main ()
+{
+    PersegiPanjang objekPP; // membuat objek
+    Lingkaran ol;
+
+    cout << "Masukkan panjang : ";
+    cin >> objekPP.panjang;
+    cout << "Masukkan Lebar ; ";
+    cin >> objekPP.lebar;
+    cout << "Luas Persegi Panjang : " << objekPP.luasPp(objekPP.panjang, objekPP.lebar) << endl;
+
 }
+
+
 
     
     
